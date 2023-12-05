@@ -1,0 +1,229 @@
+ion-content{
+    display: flex;
+    margin-bottom: 0px;
+    --background: rgb(228, 230, 236);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-container{
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+input[type="file"] {
+    display: none;
+
+}
+
+
+// .teste img {
+//     width: auto; 
+//     height: 100%;
+//     object-fit: cover; 
+//     z-index: 5;
+//     border-radius: 10px;
+//     top: 0;
+//   }
+.teste{
+    width: 120px;
+    height: 200px;
+    border: 2px solid black;
+    display:inline-block;
+    overflow: hidden;
+    font-size: xx-large;
+    text-align: center;
+    background-color: white;
+    margin: 10px 5px 20px 8.5px;
+    border-radius: 10px;
+    padding:5px;
+    box-shadow: 0px 0px 7px rgb(54, 54, 54);
+    
+}
+.teste label{
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+.teste button{
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: white;
+    position: absolute;
+    top:33%;
+    left:22%;
+    z-index: 4;
+}
+
+.teste1{
+    width: 120px;
+    height: 200px;
+    border: 2px solid black;
+    display:inline-block;
+    overflow: hidden;
+    font-size: xx-large;
+    text-align: center;
+    background-color: white;
+    margin: 10px 5px 20px 8px;
+    border-radius: 10px;
+    padding:5px;
+    box-shadow: 0px 0px 7px rgb(54, 54, 54);
+}
+.teste1 label{
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+.teste1 button{
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: white;
+    position: absolute;
+    display: block;
+    top:33%;
+    left:56%;
+
+    z-index: 4;
+}
+.teste2{
+    width: 120px;
+    height: 200px;
+    border: 2px solid black;
+    display:inline-block;
+    overflow: hidden;
+    font-size: xx-large;
+    text-align: center;
+    background-color: white;
+    margin: 10px 5px 20px 8.5px;
+    border-radius: 10px;
+    padding:5px;
+    box-shadow: 0px 0px 7px rgb(54, 54, 54);
+}
+.teste2 label{
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+.teste2 button{
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: white;
+    position: absolute;
+    top: 33%;
+    left: 91%;
+    z-index: 4;
+}
+#botao{
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: white;
+    position: relative;
+    top:84%;
+    left: 40%;
+}
+
+.input input {
+    width:100%;
+    height: 40px;
+    margin: 5px 0px 5px 0px;
+    //margin-bottom: 20px;
+   // border-radius: 20px;
+    //margin-right: 5px;
+    box-shadow: 0px 0px 7px rgb(54, 54, 54);
+}
+
+.input label{
+    margin-bottom: 5px;
+}
+
+.select label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.select{
+    margin: 10px 0px 20px 0px;
+}
+.select select{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    //border-radius: 20px;
+    //margin: 5px;
+    margin: 5px 0px 5px 0px;
+    box-shadow: 2px 3px 7px rgb(54, 54, 54);
+}
+
+
+.button button{
+    width: 125px;
+    height: 45px;
+    border-radius: 20px;
+    float: right;
+    font-size: x-large;
+    border: 3px solid black;
+    background-color: rgb(125, 125, 255);
+    box-shadow: 2px 2px 8px rgb(54, 54, 54);
+    color: white;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.button button:hover{
+    background-color:rgb(116, 116, 248) ;
+    box-shadow: 2px 6px 7px rgb(54, 54, 54);
+    opacity: 3;
+}
+
+
+footer{
+
+    position: relative;
+    color: #FFF;
+    width: 100%;
+    height: 60px;    
+    margin-top: 25%;
+    justify-content: center;
+    background-color: rgb(228, 230, 236);
+
+
+}
+
+.botao{
+    width: 50px;
+    height: 30px;
+//    background-color: aqua;
+    margin: 10px 20px 10px 35px;
+    display: flex;
+    float: left;
+    background-color: transparent;
+}
+
+.botao ion-icon{
+    width:40%;
+    height: 25px;
+    justify-content: center;
+    margin: auto;
+}
+
+
+ion-tab-bar{
+    --boder:none;
+    --background:rgba(255,255,255,.5);
+    margin: 10px 20px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.04),
+    0px 6px 3px 0px rgba(0,0,0,0.02);
+
+}
+

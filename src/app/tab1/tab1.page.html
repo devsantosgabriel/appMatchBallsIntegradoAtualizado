@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img src="assets/logo-nova.png" width="60px">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="users" *ngIf="users.length > 0; else emptyTemplate">
+
+    <div class="user" *ngFor="let user of users; let i= index;" [style.zIndex]="users.length - i"
+      (touchstart)="touchStart($event)" (touchmove)="touchMove($event, i)" (touchend)="touchEnd(i)" id="{{'card-' +i}}">
+
+      <ion-card mode="ios">
+        <ion-card-content mode="md">
+          <img [src]="user.photo" [style.width]="'100%'">
+          <ion-item lines="none">
+            <ion-label>
+              <h2>
+                {{user.name}} , {{user.age}}
+              </h2>
+              <p>
+                <img src="{{user.escudo}}"  [style.width]="'20%'" [style.height]="'80%'">
+              </p>
+            </ion-label>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <ion-icon name="heart-dislike" class="icon" color="danger" id="reject-icon"></ion-icon>
+    <ion-icon name="heart" class="icon" color="danger" id="accept-icon"></ion-icon>
+  </div>
+
+  <ng-template #emptyTemplate>
+    <div class="center">
+      <ion-icon name="close-circle"></ion-icon>
+      <br>
+      <ion-note>All Swiped!</ion-note>
+    </div>
+  </ng-template>
+
+</ion-content>

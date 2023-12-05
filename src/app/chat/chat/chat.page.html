@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <div id="container-img">
+      <img src="assets/photos/p4.jpg" id="maria">
+     </div>
+     <div id="container-p">
+          <p id="name-img">Jessica Felicio</p>
+     </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+   
+    <ion-toolbar>
+      
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-list lines="none">
+    <ion-list class="container">
+   <ion-list class="body">
+      <ion-item *ngFor="let message of messages">
+        <ion-label>{{message.sender}}</ion-label>
+        <ion-text [ngStyle]="{color: 'red'}">{{ message.text }}</ion-text>
+      </ion-item>
+    </ion-list> 
+</ion-list>
+    
+    
+<ion-item id="chat">
+  <ion-input [(ngModel)]="newMessage" placeholder="Digite sua mensagem"></ion-input>
+  <ion-button class="botao" (click)="isReplying ? enviarMensagem() : iniciarResposta()">
+    {{ isReplying ? 'Responder' : 'Enviar' }}
+  </ion-button>
+
+</ion-item>
+ </ion-list>
+</ion-content>

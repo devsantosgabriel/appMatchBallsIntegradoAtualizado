@@ -1,0 +1,7 @@
+{
+  "name": "matchBallsApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+
+    <h1>
+      <img src="assets/logo-nova.png" width="60px">
+    </h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-searchbar [debounce]="1000" (ionInput)="handleInput($event)"></ion-searchbar>
+      <ion-list>
+          <ion-item [button]="true" *ngFor="let result of results"  (click)="abrirChat()">
+            <ion-icon name="person-circle-outline" slot="start" size="large" ></ion-icon>
+            <ion-label>{{result}}</ion-label>
+            <ion-icon name="radio-button-off-outline" style="background: red; width: 5%; height: 20%;"></ion-icon>
+            <ion-note slot="end"></ion-note>
+          </ion-item>
+      </ion-list> 
+</ion-content>

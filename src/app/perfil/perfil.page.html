@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+    <ion-title>perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-toolbar>
+      <ion-title size="large">perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="perfil">
+    <img src="assets/perfil.png">
+  </div>
+  <div class="paragrafo">
+  <p>Lucas, 40</p>
+  <img src="assets/vasco.png" alt="" srcset="">
+  <button (click)="editaPerfil()"><ion-icon name="reorder-four-outline"></ion-icon></button>
+  </div>
+
+  <div class="logo">
+    <img src="assets/logo-nova.png" alt="">
+    <span>MatchBalls</span>
+  </div>
+</ion-content>

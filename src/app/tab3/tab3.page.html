@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+   
+    
+    <!-- <ion-title>
+      Configurações
+    </ion-title> -->
+
+    <img src="assets/logo-nova.png" width="60px">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card-header>
+  <ion-list>
+      <h5 id="conta">Conta</h5>
+      <h5 id="conta">Segurança</h5>
+      <h5 id="conta">Privacidade</h5>
+      <h5 style="margin-bottom: 10%;" id="conta">Suporte</h5>
+  </ion-list>
+ </ion-card-header>
+
+
+ 
+  <ion-button style="margin-top: 15%;" expand="full" shape="round" (click)="sair()">Sair</ion-button>
+  <ion-button  expand="full" shape="round" (click)="salvarConfiguracoes()">Apagar Conta</ion-button>
+</ion-content>

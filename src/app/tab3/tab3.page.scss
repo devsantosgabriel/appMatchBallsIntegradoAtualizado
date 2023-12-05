@@ -1,0 +1,43 @@
+ion-content{
+    --background: rgb(228, 230, 236);
+
+}
+
+
+
+
+
+ion-list{
+border-radius: 4%;
+}
+
+
+h5{ 
+    margin-top: 3%;
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 15%;
+    font-weight: 600;
+}
+
+ion-button{
+
+    font-family: calibri;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    color: black;
+    --background: white;
+
+}
+ion-toolbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+img{
+    position: relative;
+    left: 155px;
+}

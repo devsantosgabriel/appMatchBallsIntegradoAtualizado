@@ -1,0 +1,6 @@
+<ion-item>
+  <ion-label>Foto de Perfil</ion-label>
+  <ion-input readonly="true" [value]="selectedFile?.name"></ion-input>
+  <ion-button shape="round" (click)="fileInput.click()" expand="full">Escolher Foto</ion-button>
+  <input type="file" #fileInput (change)="onFileSelected($event)" hidden>
+</ion-item>
