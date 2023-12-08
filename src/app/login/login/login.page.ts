@@ -24,13 +24,13 @@ export class LoginPage implements OnInit {
      if(email.value == '' || senha.value == ''){
       await alert.present()
      }else{
-      this.navCtrl.navigateRoot('tabs/tab1');
+      this.irParaTab1();
      }
      
   }
   
-  fazerLogin() {
-
+  irParaTab1() {
+    this.navCtrl.navigateRoot('tabs/tab1');
     
   }
   fazerRegistro(){
